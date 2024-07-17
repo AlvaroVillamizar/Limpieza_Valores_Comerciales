@@ -1,5 +1,10 @@
 # Valores_Comerciales_Cleaning
 
+<video width="320" height="240" controls>
+  <source src="https://github.com/AlvaroVillamizar/Valores_Comerciales_Cleaning/blob/main/Images/Main_function.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 El alcance de este proyecto se centra en el desarrollo de un algoritmo Orientado a Objetos para la limpieza de los datos del DANE, esta base de datos cuenta con 477.000 ofertas de lotes o viviendas categorizadas desde casas, apartamentos, oficinas, fincas, entre otras. Adicionalmente se implementaron modelos predictivos para la evaluación de la precisión de las estimaciones realizadas utilizando la información.  
 
 ## Metodología
@@ -14,6 +19,11 @@ El proyecto busca identificar las posibles relaciones entre el precio de la vivi
 
 
 ### Webscraping
+
+<video width="320" height="240" controls>
+  <source src="https://github.com/AlvaroVillamizar/Valores_Comerciales_Cleaning/blob/main/Images/Nearby_Places.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 Se diseñó un algoritmo llamado "Nearby_locations.py", el cual utiliza las coordenadas longitudinales de las viviendas para concectarse a la API de Nominatim, por medio de la librer GeoPy en Python, de esta forma se extraen los nombres de los lugares cercanos y sus distancias respectivas para aumentar el número y la calidad de los datos. Las solicitudes realizadas por el algoritmo generan consultas de 1 kilómetro de radio alrededor de las coordenadas para limitar el conjunto de lugares, posteriormente calcula el promedio de las distancias de todos los lugares de igual categoría.
 
@@ -30,6 +40,11 @@ Entonces los lugares cercanos encontrados son: 1 Estación de policía, 1 hospit
 <img src="https://github.com/AlvaroVillamizar/Valores_Comerciales_Cleaning/blob/main/Images/Lugares_cercanos_algoritmo.png" width="auto" height="auto">
 
 ### Módulo de limpieza
+
+<video width="320" height="240" controls>
+  <source src="https://github.com/AlvaroVillamizar/Valores_Comerciales_Cleaning/blob/main/Images/Cleaning_funcs.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 Para realizar la limpieza de los datos, se seleccionaron las columnas más completas para el entrenamiento de los modelos, utilizando el porcentaje de datos faltantes como criterio excluyente. Posteriormente, se creó la clase "DataProcessing", la cual cuenta con varias funciones encargadas de acomodar y transformar sus respectivas variables. Finalmente, se integró la clase mencionada y el algoritmo de web scraping en el código principal para ejecutar la limpieza y la transformación de los datos usando la librería 'Multiprocessing'. El algoritmo está diseñado de modo que el usuario ingrese un número del 1 al 439.526, seleccionando aleatoriamente la cantidad de filas indicada y realizando la respectiva limpieza.
 
