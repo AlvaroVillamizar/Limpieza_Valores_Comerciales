@@ -1,6 +1,6 @@
 # Valores_Comerciales_Cleaning
 
-[Watch the video]("https://github.com/AlvaroVillamizar/Valores_Comerciales_Cleaning/blob/main/Images/Main_function.mp4")
+[Watch the video](https://github.com/AlvaroVillamizar/Valores_Comerciales_Cleaning/blob/main/Images/Main_function.mp4)
 
 El alcance de este proyecto se centra en el desarrollo de un algoritmo Orientado a Objetos para la limpieza de los datos del DANE, esta base de datos cuenta con 477.000 ofertas de lotes o viviendas categorizadas desde casas, apartamentos, oficinas, fincas, entre otras. Adicionalmente se implementaron modelos predictivos para la evaluación de la precisión de las estimaciones realizadas utilizando la información.  
 
